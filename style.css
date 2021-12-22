@@ -1,0 +1,496 @@
+/*
+	Theme Name: Fedev Theme
+	Author: Fedev
+	Author URI: https://fedev9.github.io
+	Description: 
+	Version: 0.1 alpha
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: responsive, one-column, two-columns, featured-images, custom-menu, custom-header, post-formats
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body, html {
+
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Sans Extra Condensed';
+}
+
+body {
+	margin-top: 5rem;
+}
+
+.nav-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.navbar ul {
+
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	list-style-type: none;
+	padding: 0 10rem;
+}
+
+.navbar ul li a {
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	width: 50px;
+	
+}
+
+.navbar ul li {
+
+	padding: 1rem 1rem;
+	margin: 0rem 2rem;
+	border-bottom: 3px solid transparent;
+	
+}
+
+.navbar ul li:hover {
+	border-bottom: 3px solid white;
+	transition: 0.3s ease-in-out;
+	transform: scale(1.15);
+	
+}
+
+
+
+
+
+/*
+=====================================
+	Footer
+=====================================
+*/
+
+.post {
+	border-radius: 20px;
+}
+
+/*
+=====================================
+	Contact Page
+=====================================
+*/
+
+.contact-container {
+	display: flex;
+	margin: 8rem 10rem 5rem 10rem;
+}
+
+.contact-img, .form {
+	flex: 1;
+}
+
+.contact-img {
+	background-image: url('https://images.pexels.com/photos/6612388/pexels-photo-6612388.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6612388.jpg&fm=jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-color: #B88283;
+	border-radius: 20px 0 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.contact-container {
+		flex-direction: column;
+		margin: 10rem 1rem;
+	}
+	
+}
+
+
+/*
+=====================================
+	Contact Form
+=====================================
+*/
+.form {
+
+	font-family: 'Fira Sans Extra Condensed';
+
+
+}
+.form>p {
+	display: none;
+}
+
+.wpcf7 {
+	display: flex;
+	padding: 2rem;
+	justify-content: center;
+	background: rgba(0, 0, 0, 1);
+	border-radius: 0 20px 20px 0;
+	
+	
+
+
+}
+
+
+.wpcf7 form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wpcf7 form p label{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.wpcf7 input:not(.wpcf7-submit) {
+
+	border: 1px solid transparent;
+	font-size: large;
+	border-bottom: 1px solid white;
+	background: transparent;
+	height: 30px;
+	text-align: center;
+	margin-top: 0.75rem;
+	font-family: 'Fira Sans Extra Condensed';
+
+	
+}
+
+.wpcf7 input::placeholder, .wpcf7-textarea::placeholder{
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.726);
+}
+
+.wpcf7-text {
+	outline: none;
+	color: white;
+}
+
+.wpcf7 p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wpcf7-textarea {
+	border-radius: 20px;
+	padding: 1rem;
+	font-family: 'Fira Sans Extra Condensed';
+	text-align: center;
+	outline: none;
+	resize: none;
+	font-size: large;
+	background: rgba(255, 255, 255, 0.247);
+	border: 1px solid transparent;
+	color: white;
+	
+	
+}
+
+.wpcf7-submit {
+	width: 100px;
+	text-transform: uppercase;
+	color: black;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	height: 2rem;
+	margin-bottom: 1rem;
+	background: white;
+	font-family: 'Fira Sans Extra Condensed';
+	cursor: pointer;
+}
+
+.wpcf7-not-valid-tip {
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.wpcf7-response-output {
+
+	background: crimson;
+	text-align: center;
+	color: white;
+	border-color: crimson!important;
+	border-radius: 20px;
+	padding: 1rem;
+	margin-top: 0!important;
+	margin: 0.5rem!important;
+
+}
+
+/*
+=====================================
+	Footer
+=====================================
+*/
+
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	min-height: 150px;
+	color: white;
+	margin-top: 5rem;
+	padding: 2rem;
+	box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	overflow: visible;
+}
+
+.dashicons {
+	color: white;
+	text-decoration: none;
+}
+
+.icons-container a {
+	text-decoration: none;
+	margin: 5rem;
+}
+
+.icons-container span:hover {
+	transform: scale(1.5);
+	transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+
+	.icons-container a {
+		margin: 2rem;
+		
+	}
+	
+}
+
+/*
+=====================================
+	Contact Style Page ID:35
+=====================================
+*/
+
+.page-35 {
+	background-color: white;
+}
+
+.page-35 .navbar ul li a {
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 2px;
+	width: 50px;
+	
+}
+
+.page-35 .nav-container {
+	background: rgba(255, 255, 255, 0.507);
+}
+
+.page-35 .navbar ul li:hover {
+	border-bottom: 3px solid black;
+	transition: 0.3s ease-in-out;
+	transform: scale(1.15);
+	
+}
+
+/*
+=====================================
+	Home Style Page ID:37
+=====================================
+*/
+
+.page-37 .logo {
+	color: white;
+}
+
+.page-37 {
+	background-color: rgb(0, 0, 0);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.home-title {
+	padding: 2rem;
+	text-align: center;
+	color:white;
+}
+
+#sb_instagram {
+	position:static;
+	background-color: white!important;
+	margin-right: 2rem;
+	width: 100%!important;
+	border-radius: 20px;
+}
+
+.sbi_header_text h3{
+	color: black;
+	letter-spacing: 1px;
+} 
+
+.sbi_photo_wrap a{
+	border-radius: 20px;
+	
+}
+
+.sbi_photo_wrap {
+	padding: 2rem;
+}
+
+.page-37 .footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	min-height: 150px;
+	color: white;
+	margin-top: 5rem;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.page-37 .dashicons {
+	color: black;
+	text-decoration: none;
+}
+
+.page-37 .post {
+	margin: 0 3rem;
+}
+
+.page-37 .blog-post {
+
+	background-color: white ;
+	border-radius: 20px;
+	margin: 0 3rem;
+
+}
+.feed-container {
+	display: flex;
+	width: 100%;
+}
+
+.blog-section {
+	flex: 2;
+}
+
+.post {
+	flex: 1;
+}
+
+.blog-post li {
+	list-style-type: none;
+}
+
+.blog-post ul {
+	margin-right: 1rem;
+}
+
+.blog-post ul li h1, .blog-post ul li h1 p {
+	padding: 1rem;
+}
+
+
+.main-title {
+	text-align: center;
+	padding: 2rem;
+	background-color: white;
+	margin: 6rem 3rem 3rem 3rem;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+/*
+=====================================
+	find Us Style Page ID:103
+=====================================
+*/
+
+.page-103 {
+	margin-top: 6rem;
+	
+}
+
+.page-103 .navbar ul li a {
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 2px;
+	width: 50px;
+	
+}
+
+.page-103 .nav-container {
+	background: rgba(255, 255, 255, 0.521);
+	z-index: 10;
+	border-radius: 0px!important;
+}
+
+.page-103 .navbar ul li:hover {
+	border-bottom: 3px solid black;
+	transition: 0.3s ease-in-out;
+	transform: scale(1.15);
+	
+}
+
+/*
+=====================================
+	Sidebar
+=====================================
+*/
+
+.sidebar {
+	position: absolute;
+	top: 10rem;
+	right: 2rem;
+	background-color: white;
+	padding: 3rem;
+	border-radius: 20px;
+}
+
+/*
+=====================================
+	404 Page Style
+=====================================
+*/
+
+.back-home {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-radius: 20px;
+	text-transform: uppercase;
+	padding: 1rem;
+	margin: 2rem;
+
+}
+
+.not-found {
+	text-transform: uppercase;
+}
+
+.page-404 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 18rem;
+}
